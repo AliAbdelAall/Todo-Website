@@ -2,7 +2,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
+.flex{
+  display: flex;
+}
 
+.row{
+  flex-direction: row;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+}
+
+.space-around{
+  justify-content: space-around;
+}
+
+.align-center{
+  align-items: center;
+}

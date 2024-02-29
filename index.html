@@ -3,12 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   <link rel="stylesheet" href="./styles/common/utilities.css">
   <link rel="stylesheet" href="./styles/common/colors.css">
   <link rel="stylesheet" href="./styles/login.css">
   <title>login</title>
 </head>
 <body>
-  
+  <div class="flex center container">
+    <div class="wrapper white">
+      <h1 >Login</h1>
+      <div class="input-box">
+        <input id="username" class="white" type="text" placeholder="Username" >
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="input-box">
+        <input id="password" class="white" type="password" placeholder="Password">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <button id="btn" class="button">Login</button>
+    </div>
+  </div>
+  <script src="./scirpts/login.js" ></script>
 </body>
 </html>
