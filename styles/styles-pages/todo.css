@@ -62,7 +62,7 @@ ul li{
   h
 }
 
-ul li.checked{
+ul .checked{
   color: rgb(154, 154, 154);
   text-decoration: line-through;
 }
@@ -74,5 +74,15 @@ ul li::before{
   content: "\f111";
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
+}
+
+li i{
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+li i:hover{
+  opacity: 70%;
 }
 
