@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.todo-container{
+  width: 100%;
+  max-width: 540px;
+  background-color: white;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 15px;
+}
+
+h2{
+  color: rgb(57, 64, 69);
+  margin-bottom: 20px;
+}
+
+h2 i{
+  margin-left: 10px;
+}
+
+.add-task{
+  padding-left: 20px;
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+input{
+  padding: 10px 5px;
+  flex-grow: 1;
+  border-radius: 20px;
+  border: solid 2px rgb(218, 218, 218);
+}
+
+.add-btn{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background-color: rgb(0, 0, 150);
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+ul li{
+  position: relative;
+  list-style: none;
+  word-wrap: break-word;
+  padding: 20px;
+  font-size: 12px 8px 12px 50px;
+  cursor: pointer;
+  user-select: none;
+  gap: 10px;
+  letter-spacing: 1px;
+  h
+}
+
+ul li.checked{
+  color: rgb(154, 154, 154);
+  text-decoration: line-through;
+}
+
+ul li::before{
+  position: absolute;
+  top: 20px;
+  left: -2px;
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
