@@ -16,14 +16,26 @@ button.addEventListener("click", function () {
     li.append(icon)
   }
   input_box.value = ""
+  saveData()
 })
 
 list_container.addEventListener("click", function (element) {
   if (element.target.tagName === "LI") {
     element.target.classList.toggle("checked")
+    saveData()
 
   } else if (element.target.tagName === "I") {
     element.target.parentElement.remove()
+    saveData()
   }
 })
 
+function saveData() {
+  localStorage.setItem("data", list_container.innerHTML)
+}
+
+function loadData() {
+  list_container.innerHTML = localStorage.getItem("data")
+}
+
+loadData()

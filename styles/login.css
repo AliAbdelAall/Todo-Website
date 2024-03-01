@@ -1,6 +1,6 @@
 .container{
   min-height: 100vh;
-  background: url(/Images/login-background.png), no-repeat;
+  background:url(/Images/login-background.png), no-repeat;
   background-size: cover;
   background-position: center;
 }
